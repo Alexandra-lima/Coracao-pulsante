@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tarefa 10 - Animações</title>
+</head>
+<style>
+*{
+        padding: 0%;
+        margin-top: 0%;
+        background-color: rgb(155, 108, 116);
+        text-align: center;
+        color: rgb(81, 10, 147);
+        font-size: 2rem;
+        box-sizing: border-box;
+    }
+.item{
+    width: 100px;
+    height:100px; 
+} 
+
+body{
+        padding: 0%;
+        font: 1em sans-serif;
+}
+
+h4{
+        color: white;
+}
+
+.animationfadeInfadeOut {
+  animation: fadeInfadeOut 1s linear infinite;
+  animation-fill-mode:forwards;
+}
+
+@keyframes fadeInfadeOut{
+  0%{
+      opacity: 1;
+  }
+        
+ 50%{
+      opacity: 0.2;
+}
+ 100%{
+      opacity: 1;
+}
+}
+</style>
+
+<body>
+        <div class="titulo">
+            <h1>Des<span style="color: rgba(252, 207, 8, 0.995);">codificadas</span></h1>
+            <h4>Eu amo tecnologia!</h4>
+        </div>
+    <section>
+        <div class="coração animationfadeInfadeOut">
+            <img src="./img/coração.png" alt="coração_pulsante">
+        </div>
+    </section>
+</body>
+</html>
